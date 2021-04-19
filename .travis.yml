@@ -6,4 +6,4 @@ jobs:
       script:
       - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
       - docker build -t $DOCKER_USERNAME/travis-ci-build-stages-demo .
-      - docker push $DOCKER_USERNAME"/travis-ci-build-stages-demo
+      - docker push $DOCKER_USERNAME/travis-ci-build-stages-demo
